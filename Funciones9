@@ -1,0 +1,26 @@
+
+package funcionesdel6al11;
+
+
+public class Funcionesdel6al11 {
+
+
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+System.out.println("Ingrese un número");
+int num=sc.nextInt();
+divisoresPrimos(num);
+}
+static boolean esPrimo(int num){
+}
+static void divisoresPrimos(int num){
+System.out.println("Divisores primos de "+num);
+    for (int=1; i<=num;i++){
+if(esPrimo(i)&&num%i==0){
+System.out.println("El número"+i);
+}
+}
+}
+}
+    
+

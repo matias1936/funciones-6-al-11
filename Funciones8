@@ -1,0 +1,24 @@
+
+package funcionesdel6al11;
+
+
+public class Funcionesdel6al11 {
+
+
+    static boolean esPrimo (int num){
+}
+static int numDivisoresprimos (int num){
+int cont;
+cont=1;
+for (int i=2; i<=num; i++){
+if (esPrimo(i)&&num%i==0){
+cont++;
+}
+}
+return (cont);
+}
+public static void main(String[]args){
+System.out.println("Divisores de 24:"+ numDivisoresprimos(24));
+}
+}
+

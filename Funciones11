@@ -1,0 +1,33 @@
+
+package funcionesdel6al11;
+ import java.util.Locale;
+import java.util.Scanner;
+
+
+public class Funcionesdel6al11 {
+
+static double aElevadoN(double a, int n){
+double res= 1;
+
+if (n==0) {
+res = 1 ;
+} else {
+for (int i=1; i <=n; i++){
+res=res*a;
+}
+}
+return (res);
+}
+public static void maint(String[]args){
+Scanner sc = newScanner(System.in);
+sc.useLocale(Locale.US);
+
+System.out.println("Introduzca  base (real): ");
+double base = sc.nextDouble();
+System.out.println("Introduzca exponente (entero): ");
+    int exp = sc.nextInt();
+    
+double res= aElevadoN (base, exp);
+System.out.println(base + " elevado a" + exp + " = " + res);
+}
+}
